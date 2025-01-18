@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive web development practice page showcasing HTML and CSS concepts">
+    <meta name="keywords" content="HTML, CSS, Web Development, Practice">
+    <meta name="author" content="Web Development Student">
+    <title>Web Development Practice Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Main Content Styles */
+        main {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        /* 3x3 Grid using divs */
+        .grid-container {
+            margin: 2rem 0;
+        }
+
+        .grid-row {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .grid-cell {
+            background: #f0f0f0;
+            padding: 2rem;
+            margin: 0.5rem;
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Box Model Gallery */
+        .box-model-gallery {
+            margin: 2rem 0;
+        }
+
+        .box-row {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box {
+            background: #e0e0e0;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box-1 { border: 5px solid red; margin: 10px; padding: 5px; }
+        .box-2 { border: 10px dashed blue; margin: 20px; padding: 10px; }
+        .box-3 { border: 15px dotted green; margin: 30px; padding: 15px; }
+
+        /* Positioning Examples */
+        .positioning-demo {
+            position: relative;
+            height: 200px;
+            margin: 2rem 0;
+            background: #f5f5f5;
+        }
+
+        .static-box {
+            position: static;
+            background: yellow;
+            padding: 1rem;
+        }
+
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background: orange;
+            padding: 1rem;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            background: red;
+            padding: 1rem;
+        }
+
+        .fixed-box {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background: green;
+            padding: 1rem;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#positioning">Positioning</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Web Development Practice Page</h1>
+
+        <section id="html">
+            <h2>1. Essential HTML Tags</h2>
+            <ul>
+                <li>div - Container for flow content</li>
+                <li>span - Inline container</li>
+                <li>nav - Navigation section</li>
+                <li>section - Standalone section</li>
+                <li>article - Self-contained content</li>
+                <li>header - Introductory content</li>
+                <li>footer - Footer section</li>
+                <li>main - Main content</li>
+                <li>aside - Side content</li>
+                <li>form - Input form</li>
+            </ul>
+        </section>
+
+        <section id="seo">
+            <h2>2. Important SEO Tags</h2>
+            <ul>
+                <li>title - Page title for search results</li>
+                <li>meta description - Page description</li>
+                <li>meta keywords - Key terms</li>
+                <li>meta viewport - Mobile optimization</li>
+                <li>meta robots - Search engine instructions</li>
+            </ul>
+        </section>
+
+        <section id="grid">
+            <h2>3. 3x3 Grid Layout</h2>
+            <div class="grid-container">
+                <div class="grid-row">
+                    <div class="grid-cell">1</div>
+                    <div class="grid-cell">2</div>
+                    <div class="grid-cell">3</div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell">4</div>
+                    <div class="grid-cell">5</div>
+                    <div class="grid-cell">6</div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell">7</div>
+                    <div class="grid-cell">8</div>
+                    <div class="grid-cell">9</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="box-model">
+            <h2>4. Box Model Gallery</h2>
+            <div class="box-model-gallery">
+                <div class="box-row">
+                    <div class="box box-1">Small</div>
+                    <div class="box box-2">Medium</div>
+                    <div class="box box-3">Large</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="font-sizes">
+            <h2>5. Font Size Examples</h2>
+            <ul>
+                <li style="font-size: 12px">12px - Used for small print (e.g., footnotes)</li>
+                <li style="font-size: 1em">1em - Relative to parent size (e.g., normal text)</li>
+                <li style="font-size: 1.5rem">1.5rem - Relative to root size (e.g., subheadings)</li>
+                <li style="font-size: 150%">150% - Percentage of parent (e.g., emphasis)</li>
+                <li style="font-size: 16pt">16pt - Print-style sizing (e.g., documents)</li>
+                <li style="font-size: 2vw">2vw - Viewport relative (e.g., responsive headlines)</li>
+            </ul>
+        </section>
+
+        <section id="positioning">
+            <h2>6. CSS Positioning</h2>
+            <div class="positioning-demo">
+                <div class="static-box">Static (default flow)</div>
+                <div class="relative-box">Relative (shifted from normal)</div>
+                <div class="absolute-box">Absolute (relative to parent)</div>
+                <div class="fixed-box">Fixed (viewport)</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web Development Practice Page - Created for learning purposes</p>
+    </footer>
+</body>
+</html>
